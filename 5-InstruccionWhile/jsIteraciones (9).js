@@ -1,20 +1,28 @@
 function Mostrar()
 {
 
-	var contador=0;
+	var bandera=0;
 	var num;
+	var max;
+	var min;
+
 	// declarar variables
 	
 	var respuesta='si';
 
-	max = prompt("Ingrese un numero");
-	max= parseInt(max);
-	min = max;
-
+	
 	while(respuesta!='no')
 	{
-		num = prompt("Ingrese otro numero");
+		num = prompt("Ingrese un numero");
 		num = parseInt(num);
+		if (bandera == 0)
+		{
+			max= num;
+			min = num;
+			bandera = 1;
+		}
+
+
 		if (num > max) {
 			max = num;
 		} 
@@ -22,8 +30,7 @@ function Mostrar()
 			min = num;
 
 		}
-
-		respuesta = prompt("Desea seguir ingresando?: (si/no) ");
+		respuesta = prompt("Desea seguir ingresando?: (s/n) ");
 
 	}
 

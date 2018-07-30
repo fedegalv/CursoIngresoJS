@@ -2,8 +2,8 @@ function Mostrar()
 {
 
 	var contador=0;
-	var num;
-	var cantNeg = 0;
+	var numero;
+	var cantidaDeNegativos = 0;
 	var cantPos = 0;
 	var cantCeros = 0;
 	var CantPar = 0;
@@ -15,46 +15,46 @@ function Mostrar()
 	var esPar;
 
 	//declarar contadores y variables
-	num = prompt("Ingrese un numero: ");
-	num = parseInt(num);
+	/*numero = prompt("Ingrese un numeroero: ");
+	numero = parseInt(numero);*/
  
 	
-	var respuesta="si";
+	var respuesta="s";
 
-	while(respuesta!="no")
+	while(respuesta!="n")
 	{
-		num = prompt("Ingrese un numero: ");
-		num = parseInt(num);
-		if (num > 0 ) {
-			sumaPos= sumaPos + num;
+		numero = prompt("Ingrese un numero: ");
+		numero = parseInt(numero);
+		if (numero > 0 ) {
+			sumaPos= sumaPos + numero;
 			cantPos++;
 		}
-		if (num < 0) {
-			sumaNeg= sumaNeg + num;
-			cantNeg++;
+		if (numero < 0) {
+			sumaNeg= sumaNeg + numero;
+			cantidaDeNegativos++;
 		}
-		if (num == 0) {
+		if (numero == 0) {
 			cantCeros++;
 		}
 
-		esPar= num % 2;
-		if ( (num %2) == 0){
+		esPar= numero % 2;
+		if ( (numero %2) == 0){
 			CantPar++;
 		}
 
 		diferencia = sumaPos - sumaNeg;;
 
 		promPos = sumaPos / cantPos;
-		promNeg = sumaNeg / cantNeg;
+		promNeg = sumaNeg / cantidaDeNegativos;
 
-		respuesta = prompt("Desea ingresar mas numeros: (si/no)")
+		respuesta = prompt("Desea ingresar mas numeroeros: (s/n)")
 
 	
 	}
 
 	/*alert("Suma de negativos: "+sumaNeg);
 	alert("Suma de positivos: "+sumaPos);
-	alert("Cantidad de negativos: "+cantNeg);
+	alert("Cantidad de negativos: "+cantidaDeNegativos);
 	alert("Cantidad de positivos: "+cantPos);
 	alert("Cantidad de ceros: "+cantCeros);
 	alert("Cantidad de pares: "+CantPar);
@@ -64,7 +64,7 @@ function Mostrar()
 	*/
 	document.write('<p>Suma de positivos: '+sumaPos+'</p>');
 	document.write('<p>Suma de negativos: '+sumaNeg+'</p>');
-	document.write('<p>Cantidad de negativos: '+cantNeg+'</p>');
+	document.write('<p>Cantidad de negativos: '+cantidaDeNegativos+'</p>');
 	document.write('<p>Cantidad de positivos: '+cantPos+'</p>');
 	document.write('<p>Cantidad de ceros: '+cantCeros+'</p>');
 	document.write('<p>Cantidad de pares: '+CantPar+'</p>');
