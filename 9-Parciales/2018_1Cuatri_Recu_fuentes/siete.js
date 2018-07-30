@@ -9,12 +9,12 @@
 			2 menores de edad
 			3 cantidad de mujeres = 1
 			4 cantidad de hombres = 2
-		nombre
+		nombref
 			de el mayor edad pepe
 			de el menor edad maria 
 			de el hombre de menor edad jose
 */
-function Mostrar()
+function mostrar()
 {
 	var nombre;
 	var sexo;
@@ -110,7 +110,11 @@ function Mostrar()
 
 	document.write("<br> Mayores edad: "+mayorEdad);
 	document.write("<br> Menores edad: "+menorEdad);
-	document.write("<br>"+);
+	document.write("<br> Cantidad de mujeres: "+cantidadMujeres);
+	document.write("<br> Cantidad de hombres: "+cantidadHombres);
+	document.write("<br> Nombre de la persona de mayor edad: "+nombreMayorEdad);
+	document.write("<br> Nombre de la persona menor edad: "+nombreMenorEdad);
+	document.write("<br> Nombre del hombre de menor edad: "+hombreMenorEdad);
 
 
 
