@@ -1,3 +1,4 @@
+
 function mostrar()
 {
 	var string1 = prompt("Ingrese el precio:", "Precio");
@@ -9,3 +10,4 @@ function mostrar()
 	var preciofinal = document.getElementById('elPrecioFinal').placeholder=total_con_descuento; // cambiamos el valor de placeholder a el valor del total con descuento
 
 }
+

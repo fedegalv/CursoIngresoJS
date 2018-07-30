@@ -1,3 +1,4 @@
+
 function mostrar()
 {
   var nombre = document.getElementById('elNombre').value; // asignamos a nombre el valor (value) dentro del elemento elNombre  que se encuentra en dos.html usando la funcion correspondiente 
