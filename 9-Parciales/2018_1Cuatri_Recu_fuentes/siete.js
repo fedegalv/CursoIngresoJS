@@ -5,14 +5,14 @@
 	pepe m 81
 	Mostrar
 		cantidad 
-			1 mayores de edad
-			2 menores de edad
-			3 cantidad de mujeres = 1
-			4 cantidad de hombres = 2
+			1- mayores de edad = 2
+			2 -menores de edad = 1
+			3- cantidad de mujeres = 1
+			4- cantidad de hombres = 2
 		nombref
-			de el mayor edad pepe
-			de el menor edad maria 
-			de el hombre de menor edad jose
+			de el mayor edad =pepe
+			de el menor edad =maria 
+			de el hombre de menor edad =jose
 */
 function mostrar()
 {
@@ -25,11 +25,10 @@ function mostrar()
 	var cantidadMujeres;
 	var cantidadHombres;
 	var mayorEdad;
-	var nombreMayorEdad
+	var nombreMayorEdad;
 	var menorEdad;
 	var nombreMenorEdad;
 	var hombreMenorEdad;
-	var nombreHombreMenorEdad;
 	var bandera;
 
 	cantidadHombres=0;
@@ -71,7 +70,7 @@ function mostrar()
 		// Contadores
 		if (edad > 18) 
 		{
-			mayorEdad++;
+			cantidadMayorEdad++;
 		}
 		else{
 			cantidadMenorEdad++;
@@ -108,8 +107,8 @@ function mostrar()
 		contador++;
 	}
 
-	document.write("<br> Mayores edad: "+mayorEdad);
-	document.write("<br> Menores edad: "+menorEdad);
+	document.write("<br> Mayores edad: "+cantidadMayorEdad);
+	document.write("<br> Menores edad: "+cantidadMenorEdad);
 	document.write("<br> Cantidad de mujeres: "+cantidadMujeres);
 	document.write("<br> Cantidad de hombres: "+cantidadHombres);
 	document.write("<br> Nombre de la persona de mayor edad: "+nombreMayorEdad);
