@@ -9,7 +9,7 @@
 			2 -menores de edad = 1
 			3- cantidad de mujeres = 1
 			4- cantidad de hombres = 2
-		nombref
+		nombre
 			de el mayor edad =pepe
 			de el menor edad =maria 
 			de el hombre de menor edad =jose
@@ -99,10 +99,9 @@ function mostrar()
 		if (sexo== "m" && edad < hombreMenorEdad) {
 			hombreMenorEdad = nombre;
 		}
-
-
-
-
+		if (edad < hombreMenorEdad) {
+			hombreMenorEdad = nombre;
+		}
 
 		contador++;
 	}
@@ -114,7 +113,4 @@ function mostrar()
 	document.write("<br> Nombre de la persona de mayor edad: "+nombreMayorEdad);
 	document.write("<br> Nombre de la persona menor edad: "+nombreMenorEdad);
 	document.write("<br> Nombre del hombre de menor edad: "+hombreMenorEdad);
-
-
-
 }
